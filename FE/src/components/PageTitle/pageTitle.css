@@ -1,0 +1,6 @@
+.title-name {
+  display: inline;
+  font-size: calc(1rem + 0.3vw);
+  font-weight: bold !important;
+  color: #00C16E;
+}
