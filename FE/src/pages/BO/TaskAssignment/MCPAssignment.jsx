@@ -11,7 +11,7 @@ export const TaskAssignment = () => {
     <div className="task-assignment">
       <Sidebar />
       <div className="task-assignment-container">
-        <Navbar pageTitle="Task Assignment" />
+        <Navbar pageTitle="Assign Task" />
         <div className="task-assignment-content">
           <div className="task-content">
             <Task isMcp={true} />
@@ -21,7 +21,7 @@ export const TaskAssignment = () => {
             <Button
               variant="success"
               className="finish-btn"
-              href="/task-assignment/route-planning"
+              href="/task-assignment/Assign-Route"
             >
               Finish
             </Button>

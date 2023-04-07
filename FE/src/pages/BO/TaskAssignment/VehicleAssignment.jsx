@@ -11,7 +11,7 @@ export const TaskAssignment = () => {
     <div className="task-assignment">
       <Sidebar />
       <div className="task-assignment-container">
-        <Navbar pageTitle="Task Assignment" />
+        <Navbar pageTitle="gg" />
         <div className="task-assignment-content">
           <div className="task-content">
             <Task />

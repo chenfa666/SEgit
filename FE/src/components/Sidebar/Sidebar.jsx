@@ -63,7 +63,7 @@ const Sidebar = (props) => {
           >
             <li className="tab">
               <FontAwesomeIcon icon={faCircleArrowDown} className="side-icon" />
-              <span>Task Assignment</span>
+              <span>Assign Task</span>
             </li>
           </Link>
           <Link to="/message" style={{ textDecoration: "none" }}>

@@ -79,12 +79,14 @@ const Signin = () => {
         </div>
       )}
 
+
+
       <div className="container">
-        <div className="row mt-lg-n12 mt-md-n12 mt-n12 justify-content-center">
+        <div className="row mt-lg-n20 mt-md-n20 mt-n20 justify-content-right">
           <div className="col-xl-4 col-lg-5 col-md-7 mx-auto">
             <div className="card mt-8">
               <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                <h4 className="authen-title-text font-weight-bolder mt-1">
+                <h4 className="authen-title-text font-weight-900 mt-1">
                   Sign in
                 </h4>
               </div>

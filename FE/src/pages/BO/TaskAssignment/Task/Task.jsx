@@ -92,13 +92,13 @@ const Task = (props) => {
     <div>
       <div className="task-btn">
         <Button variant="success" href="/task-assignment/mcp-assignment">
-          MCP Assignment
+          Assign to MCPs
         </Button>{" "}
         <Button variant="success" href="/task-assignment/route-planning">
-          Route Planning
+          Assign Route
         </Button>{" "}
         <Button variant="success" href="/task-assignment/vehicle-assignment">
-          Vehicle Assignment
+        Checking & Assigning vehicles
         </Button>{" "}
       </div>
       <h4>Task</h4>

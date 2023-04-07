@@ -3,8 +3,8 @@
   border-radius: 6px;
   background-color: #00c16e;
   background-image: url(/src/assets/images/backdrop.png);
-  width: 1920px;
-  height: 620px;
+  width: 2500px;
+  height: 720px;
 }
 
 .content {
@@ -20,9 +20,9 @@
   padding-top: 1.5rem !important;
 }
 .card {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  box-shadow: 0 4px 6px -1px rgb(255, 255, 255),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  border-radius: 0.75em;
+  border-radius: 2em;
 }
 
 .card-header {
@@ -194,3 +194,4 @@ label {
 .closebtn:hover {
   color: black;
 }
+
