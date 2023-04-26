@@ -1,10 +1,6 @@
 import React from "react";
 import "./navbar.css";
 import Dropdown from "react-bootstrap/Dropdown";
-import Button from "react-bootstrap/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import PageTitle from "../PageTitle/PageTitle";
 import AuthService from "../../pages/authen/AuthService";
 

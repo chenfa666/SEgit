@@ -2,7 +2,7 @@
   display: flex;
 }
 .dashboard-container {
-  flex: 6;
+  flex: 4;
 }
 .dashboard-content {
   margin: 0px 40px;
@@ -17,17 +17,16 @@
 .map {
   width: 95%;
   height: 600px;
-  margin-right: 0;
 }
 
 .table-content {
-  background-color: aquamarine;
-  flex-basis: 40%;
-  /* width: 200px; */
-  display: flex;
+  background-color: rgb(255, 255, 255);
+  flex-basis: 50%;
+  display: absolute;
   flex-direction: column;
 }
 
 .table-info {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+  color: #00c16e;
 }

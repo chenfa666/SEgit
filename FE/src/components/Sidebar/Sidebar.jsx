@@ -1,21 +1,19 @@
 import React from "react";
-import GridViewRoundedIcon from "@mui/icons-material/GridViewRounded";
-import CookieRoundedIcon from "@mui/icons-material/CookieRounded";
-import PeopleAltRoundedIcon from "@mui/icons-material/PeopleAltRounded";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHouse,
-  faTruckMoving,
-  faUserGroup,
-  faTrashCan,
-  faCircleArrowDown,
+  faHouseUser,
+  faTruckFront,
+  faUsers,
+  faLocationDot,
+  faComments,
+  faListCheck,
   faCircleCheck,
   faClock,
-  faCheckDouble,
   faUserCheck,
   faSquareXmark,
-  faMessage,
+
 } from "@fortawesome/free-solid-svg-icons";
+
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/UWC.png";
 import "./sidebar.css";
@@ -35,25 +33,25 @@ const Sidebar = (props) => {
         <ul>
           <Link to="/" style={{ textDecoration: "none" }}>
             <li className="tab">
-              <FontAwesomeIcon icon={faHouse} className="side-icon" />
+              <FontAwesomeIcon icon={faHouseUser} className="side-icon" />
               <span>Home</span>
             </li>
           </Link>
           <Link to="/workers" style={{ textDecoration: "none" }}>
             <li className="tab">
-              <FontAwesomeIcon icon={faUserGroup} className="side-icon" />
+              <FontAwesomeIcon icon={faUsers} className="side-icon" />
               <span>Workers</span>
             </li>
           </Link>
           <Link to="/vehicles" style={{ textDecoration: "none" }}>
             <li className="tab">
-              <FontAwesomeIcon icon={faTruckMoving} className="side-icon" />
+              <FontAwesomeIcon icon={faTruckFront} className="side-icon" />
               <span>Vehicles</span>
             </li>
           </Link>
           <Link to="/mcps" style={{ textDecoration: "none" }}>
             <li className="tab">
-              <FontAwesomeIcon icon={faTrashCan} className="side-icon" />
+              <FontAwesomeIcon icon={faLocationDot} className="side-icon" />
               <span>MCPs</span>
             </li>
           </Link>
@@ -62,13 +60,13 @@ const Sidebar = (props) => {
             style={{ textDecoration: "none" }}
           >
             <li className="tab">
-              <FontAwesomeIcon icon={faCircleArrowDown} className="side-icon" />
+              <FontAwesomeIcon icon={faListCheck} className="side-icon" />
               <span>Assign Task</span>
             </li>
           </Link>
           <Link to="/message" style={{ textDecoration: "none" }}>
             <li className="tab">
-              <FontAwesomeIcon icon={faMessage} className="side-icon" />
+              <FontAwesomeIcon icon={faComments} className="side-icon" />
               <span>Message</span>
             </li>
           </Link>
@@ -77,14 +75,14 @@ const Sidebar = (props) => {
       <hr />
       {props.isDashboard && (
         <div className="icon-list">
-          <h5 className="side-title">Statistics</h5>
+          <h5 className="side-title">STATISTICS</h5>
           <ul>
             <li className="stats-tab">
               <FontAwesomeIcon
                 icon={faCircleCheck}
                 className="side-icon bottom-icon"
               />
-              <span>Active</span>
+              <span>Online</span>
               <span className="stats">160</span>
             </li>
             <li className="stats-tab">
@@ -108,7 +106,7 @@ const Sidebar = (props) => {
                 icon={faSquareXmark}
                 className="side-icon bottom-icon"
               />
-              <span>Inactive</span>
+              <span>Offline</span>
               <span className="stats">2000</span>
             </li>
           </ul>

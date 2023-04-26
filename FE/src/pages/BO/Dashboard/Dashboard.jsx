@@ -16,7 +16,7 @@ export const Dashboard = () => {
         <Navbar pageTitle="Dashboard" />
         <div className="dashboard-content">
           <div className="table-content">
-            <div className="table-info">
+            <div className="table-info mt-4">
               <h4>Active workers</h4>
               <ActiveWorker />
             </div>
@@ -25,7 +25,7 @@ export const Dashboard = () => {
               <OverloadedMCP />
             </div>
           </div>
-          <div className="map-content">
+          <div className="map-content mt-4">
             <Map />
           </div>
         </div>

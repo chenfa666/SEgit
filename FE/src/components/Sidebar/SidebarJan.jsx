@@ -8,7 +8,7 @@ import "./sidebar.css";
 const SidebarJan = () => {
   return (
     <div className="sidebar">
-      <div className="top">
+      <div className="top justify-content-center ">
         <Link to="/" style={{ textDecoration: "none" }}>
           <span className="logo">UWC</span>
         </Link>
