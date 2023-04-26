@@ -6,7 +6,6 @@
 }
 .dashboard-content {
   margin: 0px 40px;
-  padding: 10px 0px;
   display: flex;
 }
 
@@ -22,6 +21,7 @@
 }
 
 .table-content {
+  background-color: aquamarine;
   flex-basis: 40%;
   /* width: 200px; */
   display: flex;
@@ -29,5 +29,5 @@
 }
 
 .table-info {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }

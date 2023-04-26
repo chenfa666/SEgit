@@ -2,6 +2,7 @@ import Chat from "./Chat";
 import SidebarJan from "../../../components/Sidebar/Sidebar";
 import Navbar from "../../../components/Navbar/Navbar";
 import "../../Tool/Tool";
+import MOCK_DATA from "./utils/MOCK_DATA"
 import React, { useState, useEffect } from "react";
 import { COLUMNS } from "./utils/columns";
 import { Table } from "../../../components/Table/Table";
@@ -10,22 +11,17 @@ function ChatApp() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://randomuser.me/api?results=200&nat=us&inc=id,name,phone")
-      .then((res) => {
-        const objs = res.data.results;
-        const data = objs.map((obj) => {
-          return {
-            id: obj.id.value,
-            name: obj.name.first + " " + obj.name.last,
-            phone: obj.phone,
-          };
-        });
-        setPosts(data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // use the imported file instead of axios.get
+    const objs = MOCK_DATA;
+    const data = objs.map((obj) => {
+      return {
+        id: obj.id,
+        name: obj.name,
+        email: obj.email,
+        status: obj.status,
+      };
+    });
+    setPosts(data);
   }, []);
 
   return (

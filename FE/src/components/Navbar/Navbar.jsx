@@ -18,10 +18,6 @@ const Navbar = (props) => {
       <div className="wrapper">
         <PageTitle title={props.pageTitle} />
         <div className="item">
-          {/* <Button variant="success">Contact</Button>{" "}
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <FontAwesomeIcon icon={faEnvelope} className="nav-icon" />
-          </Link> */}
           <Dropdown>
             <Dropdown.Toggle className="avatar"></Dropdown.Toggle>
             <Dropdown.Menu>

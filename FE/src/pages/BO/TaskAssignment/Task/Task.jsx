@@ -90,17 +90,15 @@ const Task = (props) => {
 
   return (
     <div>
-      <div className="task-btn">
-        <Button variant="success" href="/task-assignment/mcp-assignment">
-          Assign to MCPs
-        </Button>{" "}
-        <Button variant="success" href="/task-assignment/route-planning">
-          Assign Route
-        </Button>{" "}
-        <Button variant="success" href="/task-assignment/vehicle-assignment">
+      <Button variant="success" href="/task-assignment/mcp-assignment">
+        Assign to MCPs
+      </Button>{" "}
+      <Button variant="success" href="/task-assignment/route-planning">
+        Assign Route
+      </Button>{" "}
+      <Button variant="success" href="/task-assignment/vehicle-assignment">
         Checking & Assigning vehicles
-        </Button>{" "}
-      </div>
+      </Button>{" "}
       <h4>Task</h4>
       {props.isMcp ? (
         <>

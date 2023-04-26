@@ -95,7 +95,7 @@ class Chat extends Component {
     console.log(this.state);
     if(current_message && enter){
       messages = [...messages, {"message":current_message}];
-      fetch("http://localhost:5000?message=" + current_message)
+      fetch("http://localhost:3000?message=" + current_message)
       .then(res => res.json())
       .then(
         (result) => {

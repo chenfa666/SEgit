@@ -9,7 +9,7 @@ import TableFooter from "./TableFooter";
 
 let active = 2;
 let items = [];
-for (let i = 1; i <= 5; ++i) {
+for (let i = 1; i <= 10; ++i) {
   items.push(
     <Pagination.Item key={i} active={i === active}>
       {i}

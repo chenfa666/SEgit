@@ -6,6 +6,7 @@ import Map from "./Map/Map";
 import ActiveWorker from "./ActiveWorker/ActiveWorker";
 import OverloadedMCP from "./OverloadedMCP/OverloadedMCP";
 
+
 export const Dashboard = () => {
   const isDashboard = true;
   return (
@@ -14,9 +15,6 @@ export const Dashboard = () => {
       <div className="dashboard-container">
         <Navbar pageTitle="Dashboard" />
         <div className="dashboard-content">
-          <div className="map-content">
-            <Map />
-          </div>
           <div className="table-content">
             <div className="table-info">
               <h4>Active workers</h4>
@@ -26,6 +24,9 @@ export const Dashboard = () => {
               <h4>Overloaded MCPs</h4>
               <OverloadedMCP />
             </div>
+          </div>
+          <div className="map-content">
+            <Map />
           </div>
         </div>
       </div>

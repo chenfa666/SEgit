@@ -92,78 +92,83 @@ const Login = () => {
           {errorMessage}
         </div>
       )}
-      <div className="container mb-4">
-        <div className="row mt-lg-n12 mt-md-n12 mt-n12 justify-content-center">
-          <div className="col-xl-4 col-lg-5 col-md-7 mx-auto">
-            <div className="card mt-8">
-              <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                <h4 className="authen-title-text font-weight-bolder mt-1">
-                  Sign up
-                </h4>
-              </div>
-              <div className="card-body">
-                <form
-                  method="post"
-                  className="text-start"
-                  id="loginform"
-                  onSubmit={signupSubmit}
-                >
-                  <div className="input-group input-group-static mb-4">
-                    <label className="label-text">Email</label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      onChange={(event) => setEmail(event.target.value)}
-                    />
-                    <small id="emailHelp" className="text-danger form-text">
-                      {emailError}
-                    </small>
-                  </div>
-                  <div className="input-group input-group-static mb-4">
-                    <label className="label-text">Password</label>
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="pwd_login"
-                      onChange={(event) => setPassword(event.target.value)}
-                    />
-                    <small id="passworderror" className="text-danger form-text">
-                      {passwordError}
-                    </small>
-                  </div>
-                  <div className="input-group input-group-static mb-4">
-                    <label className="label-text">Confirm Password</label>
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="pwd_login"
-                      onChange={(event) =>
-                        setConfirmPassword(event.target.value)
-                      }
-                    />
-                    <small id="passworderror" className="text-danger form-text">
-                      {confirmPasswordError}
-                    </small>
-                  </div>
 
-                  <div className="col itext-center">
-                    <button
-                      type="submit"
-                      className="btn signin-btn w-100 mt-3 mb-0 text-white"
-                    >
-                      Sign up
-                    </button>
+      <div className="container-fluid">
+        <div className="row justify-content-center">
+          <div className="background-signup col-12">
+            <div className="row mt-lg-n12 mt-md-n12 mt-n12 justify-content-center">
+              <div className="col-xl-4 col-lg-5 col-md-7 mx-auto">
+                <div className="card mt-8">
+                  <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                    <h4 className="authen-title-text font-weight-bolder mt-1">
+                      Urban Waste Collection Aid
+                    </h4>
                   </div>
-                </form>
-              </div>
-              <div className="card-footer pt-0 px-lg-2 px-1">
-                <div className="mb-4 text-sm mx-auto">
-                  <Link
-                    to="/signin"
-                    className="signin-text text-primary font-weight-bold"
-                  >
-                    Already have an account? Sign in.
-                  </Link>
+                  <div className="card-body">
+                    <form
+                      method="post"
+                      className="text-start"
+                      id="loginform"
+                      onSubmit={signupSubmit}
+                    >
+                      <div className="input-group input-group-static mb-4">
+                        <input
+                          name="email"
+                          type="email"
+                          className="form-control"
+                          onChange={(event) => setEmail(event.target.value)}
+                          placeholder="Email"
+                        />
+                        <small id="emailHelp" className="text-danger form-text">
+                          {emailError}
+                        </small>
+                      </div>
+                      <div className="input-group input-group-static mb-4">
+                        <input
+                          name="password"
+                          type="password"
+                          className="form-control"
+                          id="pwd_login"
+                          onChange={(event) => setPassword(event.target.value)}
+                          placeholder="Password"
+                        />
+                        <small id="passworderror" className="text-danger form-text">
+                          {passwordError}
+                        </small>
+                      </div>
+                      <div className="input-group input-group-static mb-4">
+                        <input
+                          name="Confirm Password"
+                          type="password"
+                          className="form-control"
+                          id="pwd_login"
+                          onChange={(event) => setConfirmPassword(event.target.value)}
+                          placeholder="Confirm Password"
+                        />
+                        <small id="passworderror" className="text-danger form-text">
+                          {confirmPasswordError}
+                        </small>
+                      </div>
+
+                      <div className="col itext-center">
+                        <button
+                          type="submit"
+                          className="btn signin-btn w-100 mt-3 mb-0 text-white"
+                        >
+                          Sign up
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div className="mb-4 text-sm mx-auto justify-content-center">
+                    <Link
+                      to="/signin"
+                      className="signup-text font-weight-bold text-decoration-underline"
+                      style={{ color: "#00c16e" }}
+                    >
+                      Already have an account? Sign in.
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

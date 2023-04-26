@@ -1,4 +1,4 @@
-import { React } from "react";
+ import { React } from "react";
 import Sidebar from "../../../components/Sidebar/Sidebar";
 import Navbar from "../../../components/Navbar/Navbar";
 import Task from "./Task/Task";
