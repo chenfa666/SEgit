@@ -48,17 +48,50 @@ _Note_: If error happens when running above commands, try the following instead:
 npm install --force
 ```
 
-### Modify .env file in FE folder
+### Configure the environment
 
-In FE folder, you should open .env file and modify REACT_APP_MAPBOX_ACCESS_TOKEN with **your own Mapbox Access Token**
+- For Back-end
+  If you want to use our existed MongoDB, first create a ".env" file in BE folder:
 
-````
+```{bash}
+cd BE
+nano .env
+```
+
+In the ".env" file, add the following:
+
+```
+ACCESS_TOKEN_KEY=ARandomString64BytesLong
+REFRESH_TOKEN_KEY=AnotherRandomString64BytesLong
+ATLAS_URI=mongodb+srv://guest_user:xfQhVsUz2deIo3OY@cluster1.qajpv6r.mongodb.net/?retryWrites=true&w=majority
+```
+
+_Note_: You should keep your **ACCESS_TOKEN_KEY** and **REFRESH_TOKEN_KEY** as this is the key of authentication
+
+- For Front-end:
+  To be able to see the map, you should have **your own Mapbox Access Token**.
+  First, you also need to create an ".env" in your FE folder:
+
+```{bash}
+cd FE
+nano .env
+```
+
+To connect with the Back-end, you will need the following lines in your ".env" file:
+
+```
+REACT_APP_BACKEND_URL=http://localhost:1337
+REACT_APP_MAPBOX_ACCESS_TOKEN=YourMapboxAccessTokenProvidedByMapbox
+```
+
 ### Start the app
+
 First, start the BE server:
+
 ```{bash}
 cd BE
 npm start
-````
+```
 
 Then, start the FE:
 
