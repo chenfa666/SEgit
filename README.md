@@ -1,22 +1,22 @@
-# **URBAN WASTE COLLECTION (UWC) 2.0**
+# **UWC 2.0: Urban Waste Collection aid**
 
-## Goal
-The project is to deliver an upgraded version of UWC 1.0 with more features, friendly UI and scalability:
-- [x] Provide BO tools for resource management and route optimization
-- [ ] Provide Collectors and Janitors tools (on mobile) for managing their profiles, work calendar, daily tasks, vehicles and routes (Collectors only)
+## Objective
+The aim of this project is to improve UWC 1.0 by adding more functionality, user-friendly design and scalability. The main features are:
+- [x] A back-office tool for managing resources and optimizing routes
+- [ ] A web for collectors and janitors to manage their profiles, schedules, tasks, vehicles and routes
 ## Technology
-- For the techstack, we used the MERN Stack to have more consistency when processing requests between Frontend and Backend, also having the ability to scale and free hosting with MongoDB.
-- To sketch the diagram and draw wireframe, we used [draw.io](https://www.draw.io) (support UML 2.5) and AI-powered platform [Visily](https://www.visily.ai), respectively.
+- We used the MERN Stack to create a consistent and scalable web application that can handle requests from both front-end and back-end. We also used MongoDB for free hosting and data storage.
+- We used [draw.io](https://www.draw.io) to create diagrams (UML 2.5 supported) and [Visily](https://www.visily.ai) to create wireframes with AI assistance.
 
-## Run locally
+## How to Run It Locally
 ### Prerequisites
-Make sure your devices has the latest version of **npm**
-### Clone the repository
+Make sure you have the latest version of **npm** installed on your device
+### Clone the Repository
 ```{bash}
-git clone https://github.com/SE221/urban-waste-collection.git
+git clone https://github.com/chenfa666/UWC-2.0.git
 ```
-### Install the requirements
-In this step, you need to install separate packages for Front-end and Back-end
+### Install the Dependencies
+You need to install separate packages for front-end and back-end
 - For Front-end:
 ```{bash}
 cd FE
@@ -74,7 +74,7 @@ npm start
 ### Demo the app
 If you want to try the app, you can login with following information:
 ```
-username: binguyen@gmail.com
+username: tester1@gmail.com
 password: 12345678
 ```
 
