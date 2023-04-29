@@ -18,9 +18,6 @@ export const TaskAssignment = () => {
           </div>
           <div className="map-task-content">
             <MapTask />
-            <Button variant="success" className="finish-btn">
-              Finish
-            </Button>
           </div>
         </div>
       </div>

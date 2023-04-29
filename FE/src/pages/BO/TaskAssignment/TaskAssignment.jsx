@@ -47,13 +47,6 @@ export const TaskAssignment = () => {
           </div>
           <div className="map-task-content">
             <MapTask className="mapTask" />
-            <Button
-              variant="success"
-              className="finish-btn"
-              href="/task-assignment/vehicle-assignment"
-            >
-              Create Route
-            </Button>
           </div>
         </div>
       </div>

@@ -1,0 +1,11 @@
+[{"id":"T2310","CollectorID":"C5762","Range":"10/1 - 18/2","CollectorName":"Tran Gia Lap","VehicleID":"V5254","listOfMcps":"16, 8, 22, 11, 2"},
+{"id":"T1412","CollectorID":"C2383","Range":"10/1 - 15/2","CollectorName":"Vu My Loan","VehicleID":"V1354","listOfMcps":"16, 19, 22, 11, 2"},
+{"id":"T1243","CollectorID":"C0271","Range":"10/1 - 13/2","CollectorName":"Doan Dac Di","VehicleID":"V7454","listOfMcps":"16, 8, 2"},
+{"id":"T7892","CollectorID":"C1032","Range":"10/1 - 12/2","CollectorName":"Nguyen Hong Phuc","VehicleID":"V8254","listOfMcps":" 11, 2"},
+{"id":"T8229","CollectorID":"C3668","Range":"10/1 - 20/2","CollectorName":"Tran Tuong Linh","VehicleID":"V1354","listOfMcps":"17, 22, 11, 2"},
+{"id":"T8234","CollectorID":"C6911","Range":"10/1 - 21/2","CollectorName":"Dang Kim Ngan","VehicleID":"V1254","listOfMcps":"19, 22, 11, 2"},
+{"id":"T4732","CollectorID":"C1929","Range":"10/1 - 22/2","CollectorName":"Tran Bich Tram","VehicleID":"V5254","listOfMcps":"20, 11, 2"},
+{"id":"T7342","CollectorID":"C3858","Range":"10/1 - 25/2","CollectorName":"Truong Yen Bang","VehicleID":"V0912","listOfMcps":"12, 22, 11, 2"},
+{"id":"T2348","CollectorID":"C1818","Range":"10/1 - 26/2","CollectorName":"Dang Cao Nhan","VehicleID":"V8254","listOfMcps":"13, 22, 11, 2"},
+{"id":"T4732","CollectorID":"C6123","Range":"10/1 - 18/2","CollectorName":"Le Thien Khanh","VehicleID":"V7454","listOfMcps":"16, 13, 22, 11, 2"}
+]

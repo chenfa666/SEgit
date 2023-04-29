@@ -6,6 +6,7 @@ import { COLUMNS } from "./utils/columns";
 import axios from "axios";
 import AuthService from "../../../authen/AuthService";
 import "./form.css";
+import data from './data.json';
 
 const Task = (props) => {
   const [ctasks, setCtasks] = useState([]);
@@ -30,6 +31,7 @@ const Task = (props) => {
       .then((res) => {
         const objs = res.data;
         setCtasks(objs);
+        //setCtasks(data);
       })
       .catch((err) => {
         console.log(err.response.data.message);
@@ -92,9 +94,6 @@ const Task = (props) => {
     <div>
       <Button variant="success" href="/task-assignment/mcp-assignment">
         Assign to MCPs
-      </Button>{" "}
-      <Button variant="success" href="/task-assignment/route-planning">
-        Assign Route
       </Button>{" "}
       <Button variant="success" href="/task-assignment/vehicle-assignment">
         Checking & Assigning vehicles
@@ -159,15 +158,50 @@ const Task = (props) => {
             return (
               <Form.Group className="form-task">
                 <Form.Label>Task ID: </Form.Label>
-                <Form.Control value={ctask.id} disabled />
+                <Form.Control 
+                  value={ctask.id}                   
+                  disabled
+                  className={ctask.id} />
                 <Form.Label>Range: </Form.Label>
-                <Form.Control value={ctask.Range} disabled />
+                <Form.Control
+                  value={ctask.Range}
+                  disabled
+                  className={ctask.id}
+                />
                 <Form.Label>Collector ID: </Form.Label>
-                <Form.Control value={ctask.CollectorID} disabled />
+                <Form.Control
+                  value={ctask.CollectorID}
+                  disabled
+                  className={ctask.id}
+                />
                 <Form.Label>Collector Name: </Form.Label>
-                <Form.Control value={ctask.CollectorName} disabled />
+                <Form.Control
+                  value={ctask.CollectorName}
+                  disabled
+                  className={ctask.id}
+                />
                 <Form.Label>List Of MCPs: </Form.Label>
-                <Form.Control value={ctask.listOfMcps} disabled />
+                <Form.Control
+                  value={ctask.listOfMcps}
+                  disabled
+                  className={ctask.id}
+                />
+                <Form.Label>Vehicle ID: </Form.Label>
+                <Form.Control placeholder="V1234" disabled className={ctask.id} />
+                <Button
+                  variant="success"
+                  className="form-btn"
+                  onClick={() => handleEdit(ctask.id)}
+                >
+                  Edit
+                </Button>
+                <Button
+                  variant="success"
+                  className="form-btn"
+                  onClick={() => handleSubmit(ctask.id)}
+                >
+                  OK
+                </Button>
                 <Button
                   variant="success"
                   className="form-btn"
@@ -175,6 +209,7 @@ const Task = (props) => {
                 >
                   view Route
                 </Button>
+           
               </Form.Group>
             );
           })}

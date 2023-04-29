@@ -7,10 +7,10 @@ import {
   faLocationDot,
   faComments,
   faListCheck,
-  faCircleCheck,
-  faClock,
+  faSquareCheck,
   faUserCheck,
   faSquareXmark,
+  faCheck,
 
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -79,19 +79,19 @@ const Sidebar = (props) => {
           <ul>
             <li className="stats-tab">
               <FontAwesomeIcon
-                icon={faCircleCheck}
+                icon={faCheck}
                 className="side-icon bottom-icon"
               />
               <span>Online</span>
-              <span className="stats">160</span>
+              <span className="stats">150</span>
             </li>
             <li className="stats-tab">
               <FontAwesomeIcon
-                icon={faClock}
+                icon={faSquareCheck}
                 className="side-icon bottom-icon"
               />
               <span>Working</span>
-              <span className="stats">100</span>
+              <span className="stats">99</span>
             </li>
             <li className="stats-tab">
               <FontAwesomeIcon
@@ -99,7 +99,7 @@ const Sidebar = (props) => {
                 className="side-icon bottom-icon"
               />
               <span>Finished</span>
-              <span className="stats">60</span>
+              <span className="stats">77</span>
             </li>
             <li className="stats-tab">
               <FontAwesomeIcon
@@ -107,7 +107,7 @@ const Sidebar = (props) => {
                 className="side-icon bottom-icon"
               />
               <span>Offline</span>
-              <span className="stats">2000</span>
+              <span className="stats">2102</span>
             </li>
           </ul>
         </div>

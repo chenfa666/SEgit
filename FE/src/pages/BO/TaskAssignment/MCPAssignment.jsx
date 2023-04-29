@@ -21,7 +21,7 @@ export const TaskAssignment = () => {
             <Button
               variant="success"
               className="finish-btn"
-              href="/task-assignment/Assign-Route"
+              href="/task-assignment/vehicle-assignment"
             >
               Finish
             </Button>

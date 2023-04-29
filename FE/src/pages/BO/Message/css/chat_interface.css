@@ -160,26 +160,26 @@
   border: none;
   height: 100%;
   box-sizing: border-box;
-  width: calc(100% - 40px);
+  width: calc(100% - 160px);
   position: absolute;
   outline-width: 0;
   color: gray;
 }
 .bottom_wrapper .send_message {
-  width: 140px;
+  width: 120px;
   height: 50px;
   display: inline-block;
   border-radius: 50px;
-  background-color: #a3d063;
-  border: 2px solid #a3d063;
+  background-color: #00c16e;
+  border: 2px solid #00c16e;
   color: #fff;
   cursor: pointer;
   transition: all 0.2s linear;
   text-align: center;
-  /* float: right; */
+  float: right;
 }
 .bottom_wrapper .send_message:hover {
-  color: #a3d063;
+  color: #00c16e;
   background-color: #fff;
 }
 .bottom_wrapper .send_message .text {

@@ -6,7 +6,7 @@ import MOCK_DATA from "./utils/MOCK_DATA"
 import React, { useState, useEffect } from "react";
 import { COLUMNS } from "./utils/columns";
 import { Table } from "../../../components/Table/Table";
-import axios from "axios";
+
 function ChatApp() {
   const [posts, setPosts] = useState([]);
 
